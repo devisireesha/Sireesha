@@ -1,0 +1,14 @@
+/* Scoped styles for the timeline component */
+.timeline-container {
+    /* Any additional styling you need */
+  }
+  
+  .timeline-container .text-gray-400 {
+    color: #9ca3af;
+  }
+  
+  /* Override specific styles if needed */
+  .timeline-container a {
+    color: #3b82f6;
+  }
+  

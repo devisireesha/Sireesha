@@ -1,0 +1,47 @@
+{{ if and .Params.ptitle .Params.svg }}
+<button class="text-white bg-gray-300 shadow-md rounded-lg px-5 py-2.5 text-center inline-flex items-center font-medium text-sm focus:z-10 focus:ring-2 focus:ring-red-400 dark:border-none dark:bg-gray-700 dark:text-white dark:hover:bg-red-700">
+  <img src="{{ .Params.svg }}" alt="{{ .Params.ptitle }}" class="w-6 h-5 mr-2 skill-icon" />
+  <span class="font-medium truncate text-sm">{{ .Params.ptitle }}</span>
+</button>
+{{ end }}
+
+<style>
+  .bg-gray-300 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(209 213 219 / var(--tw-bg-opacity)) /* #d1d5db */;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .dark\:bg-gray-700:not(.light *) {
+      --tw-bg-opacity: 1;
+      background-color: rgb(46 46 51 / var(--tw-bg-opacity)) /* #374151 */;
+    }
+  }
+  
+  .dark\:bg-gray-700:is(.dark ) {
+    --tw-bg-opacity: 1;
+    background-color: rgb(55 65 81 / var(--tw-bg-opacity)) /* #374151 */;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .dark\:border-none:not(.light *) {
+      border-style: none;
+    }
+  }
+  
+  .dark\:border-none:is(.dark *) {
+    border-style: none;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .dark\:text-black:not(.light *) {
+      --tw-text-opacity: 1;
+      color: rgb(0 0 0 / var(--tw-text-opacity)) /* #000000 */;
+    }
+  }
+  
+  .dark\:text-black:is(.dark *) {
+    --tw-text-opacity: 1;
+    color: rgb(0 0 0 / var(--tw-text-opacity)) /* #000000 */;
+  }
+</style>

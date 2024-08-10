@@ -1,0 +1,13 @@
+{{ define "main" }}
+<div class="content">
+  <!-- Skills Section -->
+  <div class="mt-5 grid gap-3 p-4 mb-4 rounded-lg"
+       style="grid-template-columns: repeat(auto-fit, minmax(min(150px, 100%), 1fr));">
+    {{ range .Pages }}
+      {{ if .Params.ptitle }} <!-- Ensure the page has the ptitle before rendering -->
+        {{ partial "skill-card.html" . }}
+      {{ end }}
+    {{ end }}
+  </div>
+</div>
+{{ end }}

@@ -1,0 +1,81 @@
+baseURL = 'https://localhost:1313/'
+languageCode = 'en-us'
+theme = 'anubis2'
+title = 'Sireesha Seru'
+
+[author]
+name = "Devi Sireesha Seru"
+# email  = "me@junyi.dev"
+# location = "Singapore"
+
+# [menu]
+# [[menu.main]]
+# name = "Blog"
+# url = "/posts/"
+# weight = 2
+
+[[menu.main]]
+# identifier = "home"
+name = "Home"
+url = "/card"
+weight = 1
+
+# [[menu.main]]
+# name = "Projects"
+# url = ""
+# weight = 2
+
+[[menu.main]]
+name = "Skills"
+url = "/skills/*"
+weight = 3
+
+[[menu.main]]
+name = "Projects"
+url = "projects"
+weight = 5
+
+[[menu.main]]
+identifier = "portfolio"
+name = "Portfolio"
+url = "portfolio/"
+weight = 4
+
+
+[[menu.main]]
+identifier = "education.md"
+name = "Education"
+url = "education/"
+weight = 6
+
+
+
+[params]
+# readMore = false # true | false; Showing readmore link in the list of posts; default: false
+# readNextPosts = 3 # Number of posts to show in the "Read Next" section; default: 3
+# colorTheme = "auto" # "auto" | "light" | "dark"; default: "auto"
+# colorThemeSwitcher = true # true | false; Showing color theme switcher in top of the site; default: false
+# toc = true # true | false; Showing table of contents in the post; default: true
+# math = false # true | false; Enable MathJax; default: false; You can enable MathJax in the post by adding math: true in a post's metadata section.
+
+# check more social icons at https://github.com/Junyi-99/hugo-theme-anubis2/wiki/Social-Icons
+social = [
+    { id = "docs", url = "#" },
+    { id = "github", url = "https://github.com/devisireesha" },
+    { id = "linkedin", url = "https://www.linkedin.com/in/devi-sireesha-s-b8345a227/" },
+    { id = "email", url = "mailto:sireesha.seru5@gmail.com" },
+    # { id = "telegram", url = "#" },
+    # { id = "x", url = "#" },
+    { id = "youtube", url = "https://www.youtube.com/@devisireeshas" }
+]
+
+rssIcon = true # true | false; Showing RSS icon; default: true
+
+# [taxonomies]
+# tag = "tags" # This allows you to use the "tags" in your markdown metadata
+
+[markup.goldmark.renderer]
+unsafe = true # true | false; Enable unsafe mode to have a better experience
+
+[markup.highlight]
+style = 'base16-snazzy' # Highlight.js style
